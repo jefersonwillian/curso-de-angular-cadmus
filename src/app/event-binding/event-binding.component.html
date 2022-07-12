@@ -1,0 +1,9 @@
+<p>event-binding works!</p>
+
+
+<button mat-raised-button color="primary" (click)="salvar($event)">salvar</button>
+
+<button mat-raised-button color="accent" (click)="cliqueAqui()">{{myButton}}</button>
+
+<br>
+<mat-checkbox (change)="itemSelecionado($event)" >Selecionar esse item</mat-checkbox>
