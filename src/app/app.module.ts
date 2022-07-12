@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { EventBindingComPropertyBindingComponent } from './event-binding-com-property-binding/event-binding-com-property-binding.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { EventBindingComPropertyBindingComponent } from './event-binding-com-pro
     PropertyBindingComponent,
     EventBindingComponent,
     EventBindingComPropertyBindingComponent,
+    TwoWayDataBindingComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { EventBindingComPropertyBindingComponent } from './event-binding-com-pro
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,40 @@
+<p>two-way-data-binding works!</p>
+
+<div>
+    <input type="text" placeholder="Nome 1" name="nome1" [(ngModel)]="nome1">
+</div>
+
+<div>
+    <input type="text" placeholder="Nome 2" name="nome2" [(ngModel)]="nome2">
+</div>
+
+<div>
+    {{nome1}}
+</div>
+
+<div>
+    {{nome2}}
+</div>
+
+    <br>
+    <br>
+    <br>
+<div>
+    <form>
+        <div>
+            <input type="text" placeholder="rua" name="rua" [(ngModel)]="endereco.rua">
+        </div>
+        <div>
+            <input type="text" placeholder="numero" name="numero" [(ngModel)]="endereco.numero">
+        </div>
+        <div>
+            <input type="text" placeholder="cidade" name="cidade" [(ngModel)]="endereco.cidade">
+        </div>
+    </form>
+</div>
+    <br>
+<div>
+    Rua: {{endereco.rua}}
+    Numero: {{endereco.numero}}
+    Cidade: {{endereco.cidade}}
+</div>
